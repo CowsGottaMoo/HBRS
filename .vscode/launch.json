@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Caesar",
+            "request": "launch",
+            "mainClass": "Caesar",
+            "projectName": "HBRS_6a40f145"
+        },
+        {
+            "type": "java",
+            "name": "Geradengleichung",
+            "request": "launch",
+            "mainClass": "Geradengleichung",
+            "projectName": "HBRS_6a40f145"
+        },
+        {
+            "type": "java",
+            "name": "DatumErweiterung",
+            "request": "launch",
+            "mainClass": "Uebung4.DatumErweiterung",
+            "projectName": "HBRS_6a40f145"
+        },
+        {
+            "type": "java",
+            "name": "ScheffelWeizen",
+            "request": "launch",
+            "mainClass": "Uebung4.ScheffelWeizen",
+            "projectName": "HBRS_6a40f145"
+        },
+        {
+            "type": "java",
+            "name": "SummeUngleichNull",
+            "request": "launch",
+            "mainClass": "Uebung4.SummeUngleichNull",
+            "args": ["100", "100"],
+            "projectName": "HBRS_6a40f145"
+        }
+    ]
+}
