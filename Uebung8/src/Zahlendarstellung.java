@@ -9,7 +9,7 @@ public class Zahlendarstellung {
     }
 
     public static int[] ermittleZiffern(int x, int b) {
-        //kommentar
+        //kommentar 2
         int[] ziffern = new int[ermittleLaenge(x, b)];
         if (b <= 1) {
             return null;
