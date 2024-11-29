@@ -20,7 +20,7 @@ public class Vertauschen {
         String[] neues = new String[Feld.length];
         for (int i = 0; i < Feld.length; i++) {
             neues[i] = Feld[Feld.length - i - 1] + "";
-            System.out.println(neues[i]);
+            //System.out.println(neues[i]);
         }
         return neues;
     }
