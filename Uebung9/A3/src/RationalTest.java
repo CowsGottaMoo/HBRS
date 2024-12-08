@@ -8,22 +8,20 @@ public class RationalTest {
         Rational rat = null;
 
         while (true) {
-            String eingabe = scn.nextLine();
+            String eingabe = scn.next();
 
             if (eingabe.equals(".")) {
                 break;
             }
 
             if (rat == null) {
-                String[] erste = eingabe.split(" ");
-                int zaehl = Integer.parseInt(erste[0]);
-                int nenn = Integer.parseInt(erste[1]);
+                int zaehl = Integer.parseInt(eingabe);
+                int nenn = scn.nextInt();
                 rat = new Rational(zaehl, nenn);
             } else {
                 char operator = eingabe.charAt(0);
-                String[] zweite = eingabe.substring(1).split(" ");
-                int zaehl = Integer.parseInt(zweite[0]);
-                int nenn = Integer.parseInt(zweite[1]);
+                int zaehl = scn.nextInt();
+                int nenn = scn.nextInt();
                 Rational rat2 = new Rational(zaehl, nenn);
 
                 switch (operator) {
@@ -40,7 +38,9 @@ public class RationalTest {
                 }
             }
         }
-        System.out.println("Ergebnis: " + rat);
+        if (rat != null) {
+            System.out.println(rat);
+        }
         scn.close();
     }
 }
