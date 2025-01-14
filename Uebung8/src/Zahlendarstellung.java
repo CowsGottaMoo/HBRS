@@ -2,7 +2,7 @@
 public class Zahlendarstellung {
 
     public static void main(String[] args) {
-        int[] zahlen = ermittleZiffern(1234, 16);
+        int[] zahlen = ermittleZiffern(1234, 0);
         for (int i = 0; i < zahlen.length; i++) {
             System.out.print(zahlen[i] + " ");
         }
@@ -13,7 +13,6 @@ public class Zahlendarstellung {
         if (b <= 1) {
             return null;
         }
-
         if (x == 0) {
             return new int[]{0};
         }
