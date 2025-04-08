@@ -13,7 +13,7 @@ public class Stud extends Person {
 
     @Override
     public String toString(){
-        return this.matrNr + "" + this.name();
+        return matrNr + "" + this.name();
     }
 
     @Override
