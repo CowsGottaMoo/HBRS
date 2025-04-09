@@ -14,7 +14,6 @@ class TestGeoObjekt {
 	static Kreis k1;
 	static Kreis k2;
 	static Quadrat q;
-
 	@BeforeEach
 	void init() {
 		nullP = new Punkt2D();

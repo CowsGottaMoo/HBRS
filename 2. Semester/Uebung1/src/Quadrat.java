@@ -1,4 +1,18 @@
 public class Quadrat extends GeoObjekt2D{
+    private Punkt2D eckeLu;
+    private Punkt2D eckeRo;
+    private double kantenlaenge;
+
+    public Quadrat(Punkt2D lu, double kantenlaenge){
+        this.eckeLu = lu;
+        if(kantenlaenge < 0){
+            this.kantenlaenge = Math.abs(kantenlaenge);
+        } else{
+            this.kantenlaenge = kantenlaenge;
+        }
+        this.eckeRo = new Punkt2D(lu.x() + kantenlaenge, lu.y() + kantenlaenge);
+    }
+
     @Override
     public double umfang() {
         return 0;
@@ -6,18 +20,18 @@ public class Quadrat extends GeoObjekt2D{
 
     @Override
     public double flaeche() {
-        return 0;
+        return kantenlaenge * kantenlaenge;
     }
 
     public Punkt2D eckeLU(){
-        return null;
+        return eckeLu;
     }
 
     public Punkt2D eckeRO(){
-        return null;
+        return eckeRo;
     }
 
     public double kantenl(){
-        return 0;
+        return kantenlaenge;
     }
 }
