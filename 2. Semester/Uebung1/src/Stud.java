@@ -18,8 +18,7 @@ public class Stud extends Person {
 
     @Override
     public boolean equals(Object obj){
-        if (obj instanceof Stud) {
-            Stud s = (Stud) obj;
+        if (obj instanceof Stud s) {
             return this.MatNr() == s.MatNr();
         }
         return false;

@@ -11,8 +11,8 @@ class U01A1Test {
 	static Sportler sp;
 	static Fussballer ff;
 	static Fussballer fb;
-	
-	
+
+
 	@BeforeEach
 	void init() {
 		a = new Person("Anna", 1999);
@@ -22,13 +22,13 @@ class U01A1Test {
 		ff = new Fussballer("Fritz", 1960, 170, 90.5, "HBRS Kickers", false);
 		fb = new Fussballer("Ben", 2002, 180, 100.1, "HBRS Kickers", false);
 	}
-	
+
 	@Test
 	void testInit() {
 		assertTrue(a.name().equals("Anna"));
 		assertFalse(a.gebJahr() == b.gebJahr());
 	}
-	
+
 	@Test
 	void testEqualsPerson() {
 		Person c = a;
@@ -39,14 +39,14 @@ class U01A1Test {
 		assertTrue(a == c);
 		assertFalse(a == d);
 	}
-	
+
 	@Test
 	void testEqualsStud() {
 		assertFalse(a.equals(st));
 		assertFalse(st.equals(a));
 	}
-	
- 	@Test
+
+	@Test
 	void testEqualsSportler() {
 		assertFalse(b.equals(sp));
 		assertFalse(sp.equals(b));
