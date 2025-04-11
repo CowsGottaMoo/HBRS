@@ -1,38 +1,15 @@
-public class MengeUtil<T> implements Menge<Object> {
+public class MengeUtil<T> extends MengeLimited<T> {
     public static <T> Menge<T> merge(Menge<T> a, Menge<T> b) {
         if (a.isEmpty() || b.isEmpty()) {
             return a;
         }
+
+        while (!b.isEmpty()) {
+            T tmp = b.get();
+            a.insert(tmp);
+            b.delete(tmp);
+        }
         return a;
     }
 
-    @Override
-    public int size() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public Object get() {
-        return null;
-    }
-
-    @Override
-    public void insert(Object e) {
-
-    }
-
-    @Override
-    public void delete(Object e) {
-
-    }
-
-    @Override
-    public boolean contains(Object e) {
-        return false;
-    }
 }
